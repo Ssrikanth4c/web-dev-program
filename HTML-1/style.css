@@ -1,0 +1,96 @@
+
+.container{
+    margin: 0 20%;
+}
+nav{
+    background: rgb(230, 227, 227);
+    /* display: inline; */
+    justify-content: space-between;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    /* padding-right: 40px; */
+    /* border-style: dotted; */
+}
+
+ul li a{
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(53, 52, 52);
+    padding-right: 40px;
+}
+li:first-child a{
+    color:rgb(104, 100, 100)
+}
+.navRightBar i{
+    color: rgb(138, 133, 133); 
+    font-size: 20px;
+}
+.navRightBar select{
+    border: 0;
+    background: rgb(207, 205, 205);
+
+}
+
+.navRightBar{
+    display: flex;
+    padding:5px 0;
+}
+.navRightBar p{
+    padding-right:40px ;
+}
+
+nav{
+    display: flex;
+    
+}
+.paymentContainer{
+    /* border-style: dotted; */
+    margin-top: 0;
+    padding:1px 40px ;
+    background: rgb(230, 227, 227);
+}
+.paymentContainer span{
+    color: #03f4f4;
+}
+.payments{
+    display: flex;
+    justify-content: space-between;
+}
+.paymentsData  p{
+    margin-top:0;
+    font-size: 15px;
+}
+.downloadOrder{
+    color: rgb(17, 37, 146);
+}
+.paymentsData{
+    display: flex;
+}
+.paymentsData  div, .resultContainer div{
+    padding-right: 40px;
+}
+.paymentsData p{
+    color: #03f4f4;
+}
+
+.resultContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.positionELe{
+    display: flex;
+    margin-left: 40px;
+}
+.positionELe i{
+    font-size: 10px;
+}
+.positionELe span{
+    margin-right: 40px;
+}
+.searchBox input{
+    padding:5px 0;
+    font-size: 20px;
+}

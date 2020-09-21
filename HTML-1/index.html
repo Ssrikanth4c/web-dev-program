@@ -4,9 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Payments </a></li>
+                <li><a href="#">Accounts and Cards</a></li>
+                <li><a href="#">Directories</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Bonuses</a></li>
+            </ul>
+            <div class="navRightBar">
+                <p>
+                    <i class="fas fa-envelope" ></i>
+                </p>
+                <p>
+                    <i class="fas fa-bell"></i>
+                </p>
+                <p>
+                    Cornelius <i class="fas fa-angle-down"></i>
+                </p>  
+              
+                <p>Sign Out</p>
+            </div>
+        </nav>
+        <!-- payment container -->
+        <div class="paymentContainer">
+            <h3>payments by <span>all accounts <i class="fas fa-angle-down"></i> </span> for <span>last month <i class="fas fa-angle-down"></i></span></h3>
+            <div class="payments">
+                <div class="paymentsData">
+                
+                    <div><small>Comming
+
+                    </small>
+                    <br>
+                    <p>
+                        255 007 <small>UAH</small>
+                    </p>
+                    </div>
+
+                    <div>  <small>Expense
+
+                        <p style="color: red;">5 359 <small>UAH</small></p>
+                    </small>
+                    </div>
+                    <div><small> <i class="fas fa-angle-down"></i> Hide analytics</small></div>
+                </div>
+                
+                <div class="downloadOrder">
+                    <small>
+                        <i class="far fa-file"></i>
+                         Download order
+                    </small>
+                </div>
+            </div>
+        </div>
+        <!-- table content -->
+        <section>
+            <div class="resultContainer">
+                <div class="positionELe">
+                    <span style=" background: rgb(189, 186, 186); border-radius: 5px; padding:5px 10px">
+                        <i class="fas fa-circle" style="color: white;padding:5px 10px"></i> All 145
+                    </span>
+                    <span>
+                        <i class="fas fa-circle" style="color: #03f4f4; padding:10px"></i> Income 95
+                    </span>
+                    <span>
+                        <i class="fas fa-circle" style="color: red; padding:10px"></i> Outcome 44
+                    </span>
+                    <span>
+                        <i class="fas fa-circle" style="color: rgb(17, 37, 146); padding:10px"></i> To sign 1
+                    </span>
+                </div>
+                <div class="searchBox">
+                    <input type="search" placeholder="SearchBox"/>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
