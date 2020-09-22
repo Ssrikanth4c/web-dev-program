@@ -1,0 +1,94 @@
+.container{
+    border:1px dashed red;
+    margin: 20px 250px;
+    background: #03A9F4;
+    min-height:20px;
+}
+.scoreBox{
+    display: grid;
+    grid-template-areas: "max current time";
+    text-align: center;
+    color:white;
+    padding:0 20px;
+    font-weight: bold;
+}
+#maxScore{
+    grid-area: max;
+    /* padding-top:20px; */
+    text-align: left;
+    font-size: 50px;
+}
+#currentScore{
+    /* padding-top:20px; */
+    grid-area: current;
+    font-size: 60px;
+}
+#timeLeft{
+    grid-area: time;
+}
+#timeLeft p{
+    line-height: 5px;
+}
+#timeLeft > div{
+    font-size: 20px;
+    margin-right: -20px;
+}
+.letterBoxContainer, .box2{
+    background: #1E88E5;
+    position: relative;
+    z-index: 5;
+    box-shadow:0px 5px 10px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.box2{
+    margin-top: 100px;
+    min-height: 100px;
+}
+.letterBoxContainer > div {
+    display: flex;
+}
+.letterBox{
+    border-radius: 5px;
+    margin:10px 5px;
+    width: 100px;
+    height: 80px;
+    background: white;
+    position: relative;
+}
+.letterBox > p{
+    border-radius: 5px;
+    font-size: 50px;
+    margin:3px;
+    padding:4px 3px;
+    position: relative;
+    /* left: 5px; */
+    text-align: center;
+    top:2px;
+    border: 2px dashed black;
+}
+.letterBox span{
+    position: absolute;
+    bottom:5px;
+    right: 8px;
+}
+#hide{
+    visibility: hidden;
+}
+small{
+    position: absolute;
+    top:6px;
+    left:6px;
+    font-weight: bold;
+}
+#b{
+    background: orange;
+}
+#b > p, #f > p, #g > p{
+    border-color: white;
+
+}
+#f{
+    background: #00FF00;
+}
+#g{
+   background: rgb(9, 173, 157);
+}
