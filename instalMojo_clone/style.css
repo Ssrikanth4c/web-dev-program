@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+nav a{
+    color: black;
+}
+.navbar-box img{
+    width: 100px;
+}
+a:hover{
+    color:black;
+}
+.login, .login:hover{
+    color: #00000099;
+    font-weight: bold;
+    font-size: 13px;
+}
+.signup{
+    font-size: 13px;
+    font-weight: bold;
+}
+.nav{
+    display: none;
+}
+i{
+    padding:0;
+    margin:0;
+    position: absolute;
+    
+}
+.navbar-box{
+    margin:0px -10px;
+}
+
+
+/* --------------business needs------------ */
+.business-needs{
+    margin-top:80px;
+    padding:0px 5px;
+    text-align: center;
+}
+.get-email > div{
+    max-width: 400px; 
+    margin:auto;
+    /* border-style: double; */
+}
+.get-email span{
+    color:#e25528;
+}
+.get-email h1{
+    font-family: 'Roboto', sans-serif;
+    color:#595975;
+    font-size: 30px;
+    font-weight: 600
+}
+.get-email p{
+    padding: 0 30px;
+    color:#575764;
+    font-size: 15px;
+}
+.email-input{
+    padding: 0 40px;
+    /* width: 150px; */
+}
+.get-email input{
+    border:1px solid black;
+}
+.business-video{
+    margin:auto;
+    text-align: center;
+}
+.business-video > div{
+    /* width: 200px; */
+    margin:20px 30px;
+    height: 160px;
+    border:1px solid black;
+}
+/* ------------------------------business-start------------------------------- */
+.business-start{
+    margin-top:100px;
+    margin-bottom: 30px;
+    background:#f3f5f8;
+    min-height: 100px;
+    padding:30px 0;
+}
+
+.business-start p{
+    color:#575764;
+    font-weight: 600;
+    width: 260px;
+    font-size: 20px;
+    margin: 20px auto;
+}
+.business-start span{
+    color: #e25528;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+}
+
+/* ------------------------max screen------------------------ */
+@media (min-width:1200px){
+    .signup, .signup:hover{
+        padding:  10px 20px;
+        background: #3ac379;
+    }
+    
+    .login, .login:hover{
+        padding: 8px 25px;
+        border:1px solid black;
+        font-size: 17px;
+    }
+    nav > a {
+        margin:0 10px;
+    }
+    .navbar-box {
+        margin:0;
+        padding: 0 100px;
+    }
+}
+
+/* ------------------------large screen------------------- */
+@media (min-width: 992px){
+   .nav-display{
+       display: block !important;
+   }
+   .navbar-box{
+    margin:0px 0px;
+   }
+   nav > a {
+       margin:0 5px;
+       font-size: 15px;
+    }
+    span{
+        padding-right:10px;
+        
+    }
+    .login, .login:hover{
+       
+        border:1px solid black;
+       padding:0 20px;
+    }   
+    .business-start p{
+        font-size: 30px ;
+        font-weight: 500;
+        padding: 35px 0;
+    }
+    .business-start span{
+        font-weight: 900;
+    }
+}
+/* ---------------------medium screen ----------------------- */
+@media (min-width: 768px){
+    .business-needs{
+        text-align:left;
+    }
+    .get-email h1{
+        font-size: 35px;
+    }
+    .get-email p{
+        font-size: 18px;
+    }
+    .email-input{
+        padding-right: 40px;
+        padding-left: 15px;
+        width: 150px;
+    }
+    .get-email p{
+        padding: 0;
+    }
+    .email-btn button{
+        padding:10px 0;
+    }
+    .navbar-box img{
+        width: 100px;
+    }
+    .business-start p{
+        width: auto;
+        margin:auto;
+        line-height: 40px;
+    }
+
+}
