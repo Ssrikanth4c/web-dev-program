@@ -40,7 +40,7 @@ i{
 .get-email > div{
     max-width: 400px; 
     margin:auto;
-    /* border-style: double; */
+
 }
 .get-email span{
     color:#e25528;
@@ -49,7 +49,8 @@ i{
     font-family: 'Roboto', sans-serif;
     color:#595975;
     font-size: 30px;
-    font-weight: 600
+    font-weight: 600;
+    margin-bottom:20px;
 }
 .get-email p{
     padding: 0 30px;
@@ -63,16 +64,18 @@ i{
 .get-email input{
     border:1px solid black;
 }
-.business-video{
-    margin:auto;
+
+.business-video {
     text-align: center;
+    margin: 40px auto;
+    /* border:1px solid red; */
 }
-.business-video > div{
-    /* width: 200px; */
-    margin:20px 30px;
+#business-video {
+    width: 220px;
     height: 160px;
-    border:1px solid black;
+    margin:40px auto;    
 }
+
 /* ------------------------------business-start------------------------------- */
 .business-start{
     margin-top:100px;
@@ -89,12 +92,132 @@ i{
     font-size: 20px;
     margin: 20px auto;
 }
-.business-start span{
+.business-start span, .s-y-b-inner-text span{
     color: #e25528;
     font-family: 'Roboto', sans-serif;
     font-weight:900;
 }
+/* -------------------------start your business----------------- */
+.s-y-b-inner-text h2{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold !important;
+}
+.inner-para p{
+    color:#575764;
+    font-size: 15px;
+}
+.inner-icons img{
+    width: 50px;
+}
+.payment-inner-icon-box{
+    margin: auto ;
+}
+.inner-icons{
+    width: 430px;
+}
+.inner-icons p{
+    font-size: 12px;
+}
 
+/* ---------------------medium screen ----------------------- */
+@media (min-width: 768px){
+    .business-needs{
+        text-align:left;
+    }
+    .get-email h1{
+        font-size: 35px;
+    }
+    .get-email p{
+        font-size: 18px;
+        padding: 0;
+    }
+    .email-input{
+        padding-right: 40px;
+        padding-left: 15px;
+        /* width: 150px; */
+    }
+    .email-btn button{
+        padding:10px 0;
+    }
+    
+    .business-start p{
+        width: auto;
+        margin:auto;
+        line-height: 40px;
+    }
+    #business-video {
+        width: 250px;
+        height: 160px;
+        margin:40px auto;    
+    }
+    .s-y-b-inner-text{
+        margin:0px 100px;
+    }
+
+
+}
+
+/* ------------------------large screen------------------- */
+@media (min-width: 992px){
+   .nav-display{
+       display: block !important;
+   }
+   .navbar-box{
+    margin:0px 0px;
+   }
+   .navbar-box img{
+    width: 150px;
+   }
+   nav > a {
+       margin:0 5px;
+       font-size: 15px;
+    }
+    span{
+        padding-right:10px;
+        
+    }
+    .login, .login:hover{
+       
+        border:1px solid black;
+       padding:0 20px;
+    }  
+    .get-email h1{
+        font-size: 50px;
+    }
+    .get-email p{
+        font-size: 20px;
+    }
+    .get-email > div{
+        max-width: 350px;
+    }
+    .email-input {
+        /* border:1px solid red; */
+        padding-right: 80px;
+    }
+    
+    .business-start p{
+        font-size: 30px ;
+        font-weight: 500;
+        padding: 35px 0;
+    }
+    .business-start span{
+        font-weight: 900;
+    }
+    #business-video {
+        width: 350px;
+        /* height: 160px; */
+        margin:40px auto;    
+    }
+    .s-y-b-inner-text{
+        text-align: left;
+        margin:0;
+    }
+    .inner-text h1, .inner-para{
+        font-size: 5px;
+    }
+    
+}
 /* ------------------------max screen------------------------ */
 @media (min-width:1200px){
     .signup, .signup:hover{
@@ -114,67 +237,15 @@ i{
         margin:0;
         padding: 0 100px;
     }
-}
-
-/* ------------------------large screen------------------- */
-@media (min-width: 992px){
-   .nav-display{
-       display: block !important;
-   }
-   .navbar-box{
-    margin:0px 0px;
-   }
-   nav > a {
-       margin:0 5px;
-       font-size: 15px;
-    }
-    span{
-        padding-right:10px;
-        
-    }
-    .login, .login:hover{
-       
-        border:1px solid black;
-       padding:0 20px;
-    }   
-    .business-start p{
-        font-size: 30px ;
-        font-weight: 500;
-        padding: 35px 0;
-    }
-    .business-start span{
-        font-weight: 900;
-    }
-}
-/* ---------------------medium screen ----------------------- */
-@media (min-width: 768px){
-    .business-needs{
-        text-align:left;
-    }
-    .get-email h1{
-        font-size: 35px;
-    }
-    .get-email p{
-        font-size: 18px;
+    #business-video {
+        width: 430px;
+        /* height: 160px; */
+        margin: auto;    
     }
     .email-input{
-        padding-right: 40px;
-        padding-left: 15px;
-        width: 150px;
+        padding:0px;
+        margin-left: 15px;
     }
-    .get-email p{
-        padding: 0;
-    }
-    .email-btn button{
-        padding:10px 0;
-    }
-    .navbar-box img{
-        width: 100px;
-    }
-    .business-start p{
-        width: auto;
-        margin:auto;
-        line-height: 40px;
-    }
-
+   
+    
 }
