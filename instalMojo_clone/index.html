@@ -15,17 +15,82 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0 ">
-        <!-- navbar -->
-        <div class="navbar-box bg bg-white sticky-top  mx-2">
-            <div class="d-flex flex-nowrap justify-content-between  mt-4">
-                <div class="mr-2">
-                    <img src="./images/logo_instamojo.webp" alt="logo">
-                </div>
+    <div class="container-fluid p-0 " id='main-container'>
 
+          <!-- redirect to top -->
+          <!-- <div class="redirect-to-top"> -->
+            <div class="fixed-pos">
+                <a href="#start-your-business" >
+                   <i class="material-icons text-white " style="font-size: larger; padding: 5px 0 6px 5px;">expand_less</i>
+                </a>
+            </div>
+        </div>
+
+        <!-- side nav -->
+        <div class="side-nav  " id="side-nav">
+            <div id='collapse-side'>
+                <i class="material-icons md-48">clear</i>
+            </div>
+            <!-- ------------------ side menu ------------------ -->
+            <div class="list-group pr-4">
+                <div class="list-group-item  menu-items border-0 rounded-0" >
+                    <div class="d-flex  justify-content-between text-white pr-3">                        
+                        <p>Start</p>
+                        <p><i class="material-icons md-48 ">navigate_next</i></p>
+                    </div>
+                </div>
+                <div class="list-group-item menu-items border-0 rounded-0 " style="background: #4e4e91;">
+                    <div class="d-flex justify-content-between text-white pr-3">
+                        <p>Manage</p>
+                        <p><i class="material-icons md-48 ">navigate_next</i></p>
+                    </div>
+                </div>
+                <div class="list-group-item menu-items border-0 rounded-0 " style="background: #4e4e91;">
+                    <div class="d-flex justify-content-between text-white pr-3">
+                        <p>Grow</p>
+                        <p><i class="material-icons md-48 ">navigate_next</i></p>
+                    </div>
+                </div>
+                <div class="list-group-item menu-items border-0 rounded-0 " style="background: #4e4e91;">
+                    <div class="d-flex justify-content-between text-white pr-3">
+                        <p>Pricing</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="list-group-item menu-items border-0 rounded-0 " style="background: #4e4e91;">
+                    <div class="d-flex justify-content-between text-white pr-3">
+                        <p>Developers</p>
+                        <p><i class="material-icons md-48 ">navigate_next</i></p>
+                    </div>
+                </div>
+                <div class="list-group-item menu-items border-0 rounded-0 " style="background: #4e4e91;">
+                    <div class="d-flex justify-content-between text-white pr-3">
+                        <p>Resources</p>
+                        <p><i class="material-icons md-48 ">navigate_next</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <div class="navbar-box bg bg-white   mx-0  ">
+            <div class="d-flex flex-nowrap justify-content-between ">
+                <!-- navbar-logo -->
+                <div class="mr-2">
+                    <div class="row">
+                        <!-- menu -->
+                        <div class="px-4 d-lg-none ">
+                            <i class="material-icons md-20 " id='menu'>menu</i>
+                        </div>
+                        <div class="ml-3">
+                            <img src="./images/logo_instamojo.webp" alt="logo">
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- nav things -->
                 <div class=" flex-md-grow-1">
-                    <!-- nav things -->
-                    <div class="d-none nav-display">
+                    <!-- nav things flex -->
+                    <div class="d-none d-lg-block nav-display">
                         <div class="d-flex flex-nowrap justify-content-md-between">
 
                             <nav class="nav d-flex flex-md-nowrap">
@@ -55,9 +120,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- signup log In -->
                 <div class="d-flex justify-content-between">
-                    <button class="btn btn-outline-light login mr-3">Log In</button>
-                    <button class="btn btn-success signup">Sign Up</button>
+                    <button id='login' class="btn btn-outline-light login mr-3">Log In</button>
+                    <button class="btn signup">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -89,7 +155,7 @@
                 <div class=" business-video col-md-6 col-sm-12">
                     <div id="business-video">
                         <img class='w-100 '
-                            src="https://www.instamojo.com/wp-content/uploads/2020/06/start-your-business-2-480x407.jpg"
+                            src="/images/manage-your-business.jpg"
                             alt="">
                     </div>
                 </div>
@@ -97,6 +163,12 @@
 
         </div>
         <!-- scroll button -->
+        <div class="scroll-button  d-sm-none d-md-block p-5 text-center">
+            <a href="#start-your-business">
+               <img src="images/mouse-1.svg" alt="">
+                <p>Scroll</p>
+            </a>
+        </div>
         <!-- -------------------------- business start -------------------------- -->
         <div class="business-start">
             <div class="container px-5">
@@ -110,7 +182,7 @@
             </div>
         </div>
         <!-- ----------------------start your business ------------------------- -->
-        <div id="start-your-business" class="mb-5 container-sm-fluid container-md">
+        <div id="start-your-business" class="mb-5 container-sm-fluid container-md container-lg-fluid">
             <div class="row ">
                 <div class="col-sm-12 col-lg-7 order-lg-2 s-y-b-img">
                     <img src="./images/start-your-business.jpg" class="w-100" alt="start-business" />
@@ -288,22 +360,110 @@
             </div>
         </div>
         <!-- ------------------------Business Journey ---------------------------- -->
-        <div class="business-journey">
-            
+        <div class="business-journey text-center text-white">
+                <h3 class='s-y-journey-header'>
+                    Start your business journey
+                </h3>
+                <form class="row justify-content-center ">
+                    <!-- <div> -->
+                        <input class="col-md-8" type="email" name="email" placeholder="Your email Id" id="jounrey-email" />
+                    <!-- </div> -->
+                    <div class="">
+                        <button class="btn" type="submit">Get Started</button>
+                    </div>
+                </form>
+                <p>
+                    No set up fee. No maintenance charges. Sign up for FREE.
+                </p>
         </div>
-    </div>
+      
+        <!-- --------------------------- sponsors logo's -------------------------- -->
+        <div class="sponsor-block border py-5 my-5 ">
+            <div class="mx-5 px-3">
+                <div class="row justify-content-center ">
+                    <img src="/images/logo_group-1.webp" alt="urbanclap">
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------------footer --------------------------- -->
+        <div class="footer-box">
+            <div class="footer-container container container-sm-fluid">
+                <div class="row">
+                    <div class="col-6 text-left ">
+                        <p class="text-white"><b>Start</b></p>
+                        <p>Payments</p>
+                        <p>Online Store</p>
+                        <p>Domains & Emails</p>
+                    </div>
+                    <div class="col-6 text-left">
+                        <p class="text-white"><b>Manage</b></p>
+                        <p>Shipping</p>
+                        <p>Analytics</p>
+                        <p>CRM</p>
+                        <p>Mobile App</p>
+                        <p>Credit Book</p>
+                    </div>
+                    <div class="col-6 text-left">
+                        <p class="text-white"><b>Grow</b></p>
+                        <p>Capital</p>
+                        <p>Faster payouts</p>
+                        <p>Learning</p>
+                        <p>mojoPlus</p>
+                        <p>Instacash</p>
+                    </div>
+                    <div class="col-6 text-left">
+                        <p class="text-white"><b>Company</b></p>
+                        <p>About Us</p>
+                        <p>Careers</p>
+                        <p>Terms of Services</p>
+                        <p>Privacy</p>
+                        <p>Contact</p>
+                    </div>
+                    <div class="col-6 text-left">
+                        <p class="text-white"><b>Resources</b></p>
+                        <p>Blog</p>
+                        <p>eBooks</p>
+                        <p>Success Stories</p>
+                        <p>Videos</p>
+                        <p>Press</p>
+                    </div>
+                    <div class="col-6 text-left">
+                        <p class="text-white"><b>Developers</b></p>
+                        <p>API & Plugins</p>
+                        <p>Documentation</p>
+                        <p>Mojo Developers Program</p>
+                        <p>Webhooks</p>
+                        <p>Marketplace API</p>
+                    </div>
+                    <div class="col-6 text-left">
+                        <p class="text-white"><b>Features</b></p>
+                        <p>Instamojo App Store</p>
+                        <p>Conveniene Fee</p>
+                        <p>Bank Transfer</p>
+                        <p>Team Accouns</p>
+                    </div>
+                    <div class="col-6 text-left">
+                        <p class="text-white"><b>Pricing</b></p>
+                        <p>Become a Partner</p>
+                        <p>Refer & Earn</p>
+                        <p>System Status</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <script src="/script.js"></script>
+    </div>
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
-
+    
 </body>
 
 </html>

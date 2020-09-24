@@ -2,8 +2,12 @@
 nav a{
     color: black;
 }
+.navbar-box{
+    padding:20px 10px;
+   }
 .navbar-box img{
-    width: 100px;
+    padding-top:5px;
+    width: 120px;
 }
 a:hover{
     color:black;
@@ -11,23 +15,62 @@ a:hover{
 .login, .login:hover{
     color: #00000099;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 15px;
 }
-.signup{
-    font-size: 13px;
+.signup, .signup:hover{
+    padding:  10px 20px;
+    background: #3ac379;
+    font-size: 15px;
+    color: white;
     font-weight: bold;
 }
+
 .nav{
     display: none;
 }
-i{
+.nav-display i{
     padding:0;
     margin:0;
     position: absolute;
     
 }
+
 .navbar-box{
-    margin:0px -10px;
+    padding:5px auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0px;
+    z-index: 10;
+    box-shadow: 0px 2px 5px rgb(170, 169, 169);
+
+}
+#menu{
+    padding-top:5px;
+    cursor:all-scroll;
+}
+/* side nav */
+.side-nav{
+    display: none;
+    position: fixed;
+    z-index: 11;
+    width: 340px;
+    height: 933px;
+    background: #4e4e91; 
+    padding: 35px 0;   
+}
+.side-nav-collapse{
+    display:block;
+}
+#collapse-side{
+    position: absolute;
+    right: 30px;
+    color: white;
+    top:10px;
+    cursor:all-scroll;
+}
+
+.menu-items{
+    background: #4e4e91
 }
 
 
@@ -63,6 +106,7 @@ i{
 }
 .get-email input{
     border:1px solid black;
+    padding-left:10px;
 }
 
 .business-video {
@@ -75,10 +119,16 @@ i{
     height: 160px;
     margin:40px auto;    
 }
-
+.scroll-button p{
+    font-weight: bold;
+    color: #00000032;
+}
+.scroll-button a{
+    text-decoration: none;
+}
 /* ------------------------------business-start------------------------------- */
 .business-start{
-    margin-top:100px;
+    /* margin-top:100px; */
     margin-bottom: 30px;
     background:#f3f5f8;
     min-height: 100px;
@@ -126,7 +176,68 @@ i{
 .s-y-b-button, .m-y-b-button, .g-y-b-button {
     padding-top: 5px;
 }
-/* ---------------------medium screen ----------------------- */
+
+/* ---------------------business Journey--------------------- */
+.business-journey{
+    margin: auto;
+    padding: 50px 0;
+    background: #4e4e91;
+}
+
+.business-journey h3{
+    color: white;    
+}
+.business-journey form{
+    flex-direction: column;
+    /* margin: auto; */
+    max-width: 500px;
+    margin: 25px auto;
+    position: relative;
+}
+.business-journey input{
+    padding: 9px 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background:#a7a7c8;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.business-journey button{
+    color: #404092;
+    font-weight: bold;
+    background: white;
+    /* margin: 20px; */
+    padding:5px 30px ;
+}
+
+.fixed-pos{
+    position: fixed;
+    background: #00000032;
+    width: 50px;
+    height: 50px;
+    bottom: 125px;
+    right: 0;
+    font-size: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* footer */
+.footer-box{
+    background: #4e4e91;
+}
+
+
+
+
+/* *************************************************************************************************
+                                            Responsive
+****************************************************************************************************
+ */
+
+
+ /* ---------------------medium screen ----------------------- */
 @media (min-width: 768px){
     .business-needs{
         text-align:left;
@@ -160,20 +271,33 @@ i{
     .s-y-b-inner-text, .m-y-b-inner-text, .g-y-b-inner-text{
         margin:0px 100px;
     }
-
+    .business-journey button{
+        position: absolute;
+        bottom: 0px;
+        right: 25px;
+        padding:10px 30px;
+        border-left: none !important;
+       border-radius: 0 5px  5px 0
+    }
+    .business-journey input{
+        margin-bottom: 0px;
+    }
+    .side-nav{
+        width: 400px;
+    }
 
 }
 
 /* ------------------------large screen------------------- */
 @media (min-width: 992px){
-   .nav-display{
-       display: block !important;
-   }
+
    .navbar-box{
     margin:0px 0px;
+    padding:auto 30px;
    }
    .navbar-box img{
-    width: 150px;
+    width: 170px;
+    padding-top:0px;
    }
    nav > a {
        margin:0 5px;
@@ -264,7 +388,8 @@ i{
     }
     .navbar-box {
         margin:0;
-        padding: 0 100px;
+        padding: 20px 90px;
+        /* border-style: solid; */
     }
     #business-video {
         width: 430px;
@@ -285,6 +410,10 @@ i{
     .s-y-b-button button, .m-y-b-button button, .g-y-b-button button{
         margin-top: 10px;
         margin-left:-10px;
+    }
+    .business-journey h3{
+        font-size: 42px;
+        font-weight: bolder;    
     }
     
 }
