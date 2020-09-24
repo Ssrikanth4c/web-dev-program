@@ -92,13 +92,13 @@ i{
     font-size: 20px;
     margin: 20px auto;
 }
-.business-start span, .s-y-b-inner-text span{
+.business-start span, .s-y-b-inner-text span, .m-y-b-inner-text span, .g-y-b-inner-text span{
     color: #e25528;
     font-family: 'Roboto', sans-serif;
     font-weight:900;
 }
 /* -------------------------start your business----------------- */
-.s-y-b-inner-text h2{
+.s-y-b-inner-text h2, .m-y-b-inner-text, .g-y-b-inner-text{
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold !important;
@@ -110,7 +110,7 @@ i{
 .inner-icons img{
     width: 50px;
 }
-.payment-inner-icon-box{
+.payment-inner-icon-box, .manage-inner-icon-box, .grow-inner-icon-box{
     margin: auto ;
 }
 .inner-icons{
@@ -119,7 +119,13 @@ i{
 .inner-icons p{
     font-size: 12px;
 }
-
+.s-y-b-button button, .m-y-b-button button, .g-y-b-button button{
+    padding: 10px 25px;
+    margin-top: -10px;
+}
+.s-y-b-button, .m-y-b-button, .g-y-b-button {
+    padding-top: 5px;
+}
 /* ---------------------medium screen ----------------------- */
 @media (min-width: 768px){
     .business-needs{
@@ -151,7 +157,7 @@ i{
         height: 160px;
         margin:40px auto;    
     }
-    .s-y-b-inner-text{
+    .s-y-b-inner-text, .m-y-b-inner-text, .g-y-b-inner-text{
         margin:0px 100px;
     }
 
@@ -209,14 +215,37 @@ i{
         /* height: 160px; */
         margin:40px auto;    
     }
-    .s-y-b-inner-text{
+    .s-y-b-inner-text, .m-y-b-inner-text, .g-y-b-inner-text{
         text-align: left;
-        margin:0;
+        margin:30px;
     }
-    .inner-text h1, .inner-para{
-        font-size: 5px;
-    }
-    
+   #start-your-business, #manage-your-business, #grow-your-business{
+       padding: 10px 40px;
+   }    
+   .s-y-b-button, .m-y-b-button, .g-y-b-button{
+    text-align: left;
+    padding-left: 30px;
+   }
+   
+   .inner-text h2{
+       
+       font-size: xx-large;
+   }
+   .inner-para p{
+        font-size: 16px;
+        line-height: 30px;
+        padding-right: 20px;
+   }
+   .inner-icons{
+       width: 300px;
+   }
+   .inner-icons p{
+       padding:auto 0;
+       font-size: 14px;
+   }
+   .inner-icons img{
+       width: 40px;
+   }
 }
 /* ------------------------max screen------------------------ */
 @media (min-width:1200px){
@@ -246,6 +275,16 @@ i{
         padding:0px;
         margin-left: 15px;
     }
-   
+    .inner-icons{
+        width: 360px;
+        margin-left: 0;
+    }
+    .payment-inner-icon-box, .manage-inner-icon-box,  .grow-inner-icon-box{
+        margin-left: -70px;
+    }
+    .s-y-b-button button, .m-y-b-button button, .g-y-b-button button{
+        margin-top: 10px;
+        margin-left:-10px;
+    }
     
 }
