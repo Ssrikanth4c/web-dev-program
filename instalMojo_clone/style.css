@@ -4,10 +4,21 @@ nav a{
 }
 .navbar-box{
     padding:20px 10px;
-   }
+    /* padding:5px auto; */
+    position: -webkit-sticky;
+    position: sticky;
+    top:0px;
+    z-index: 10;
+    box-shadow: 0px 2px 5px rgb(170, 169, 169);
+
+}
+#menu{
+    padding-top:5px;
+    cursor:all-scroll;
+}
 .navbar-box img{
     padding-top:5px;
-    width: 120px;
+    width: 110px;
 }
 a:hover{
     color:black;
@@ -35,19 +46,7 @@ a:hover{
     
 }
 
-.navbar-box{
-    padding:5px auto;
-    position: -webkit-sticky;
-    position: sticky;
-    top:0px;
-    z-index: 10;
-    box-shadow: 0px 2px 5px rgb(170, 169, 169);
 
-}
-#menu{
-    padding-top:5px;
-    cursor:all-scroll;
-}
 /* side nav */
 .side-nav{
     display: none;
@@ -226,6 +225,54 @@ a:hover{
 /* footer */
 .footer-box{
     background: #4e4e91;
+    margin: 0;
+    position: relative;
+}
+.footer-container {
+    /* border:1px solid red; */
+    padding-top:200px;
+
+}
+.footer-links > h3{
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.footer-links > p{
+    font-size: smaller;
+    color: rgb(212, 204, 204);
+    line-height: 10px;
+    font-weight: lighter;
+}
+.footer-image img{
+   width: 100px;
+   margin-left: -10px;
+}
+.footer-image{
+    padding-left: 20px;
+}
+.footer-image small{
+    color: rgb(212, 204, 204);
+}
+.keep-in-touch{
+    line-height: 10px;
+    margin-top: 30px;
+    padding: 30px auto;
+}
+.keep-in-touch img{
+    width: 15px;
+    margin-right: 10px;
+}
+.paly-store img{
+    width: 130px;
+}
+.paly-store{
+    /* border:1px solid red; */
+    margin: 50px auto;
+}
+.last-row small{
+    margin-bottom: 20px;
+    /* background: red; */
 }
 
 
@@ -285,6 +332,48 @@ a:hover{
     .side-nav{
         width: 400px;
     }
+
+    /* footer */
+
+.footer-links > h3{
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.footer-links > p{
+    color: rgb(212, 204, 204);
+    line-height: 10px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.footer-links{
+    /* border:1px solid red; */
+    margin: 20px auto;
+}
+.footer-image img{
+   width: 180px;
+   margin-left: -15px;
+}
+.footer-image small{
+    font-size: 15px;
+}
+.keep-in-touch img{
+    width: 20px;
+    margin-right: 10px;
+}
+.keep-in-touch small{
+    font-size: 17px;
+}
+.last-row small{
+    font-size: 15px;
+}
+.paly-store{
+    margin: 0;
+}
+.paly-store img{
+    padding-bottom:25px;
+}
 
 }
 
