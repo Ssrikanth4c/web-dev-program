@@ -56,14 +56,14 @@ a:hover{
     width: 340px;
     height: 933px;
     background: #4e4e91; 
-    padding: 35px 0;   
+    padding: 35px 0; 
 }
 .side-nav-collapse{
     display:block;
 }
 #collapse-side{
     position: absolute;
-    right: 30px;
+    right: 20px;
     color: white;
     top:10px;
     cursor:all-scroll;
@@ -276,6 +276,12 @@ a:hover{
     margin-bottom: 20px;
     /* background: red; */
 }
+
+#sponser-img{
+    background-image: url(images/logo_grup_mobile_1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* ----------------------------------why-business--------------------------------------- */
 .why-business{
     background:#f3f5f8;
@@ -424,6 +430,7 @@ a:hover{
         top: 40px;  
         left:-510px; 
         right: 0;
+
     }
     .submenu{
         display: block;
@@ -498,6 +505,10 @@ a:hover{
    }
    .inner-icons img{
        width: 40px;
+   }
+   #sponser-img{
+       background-image: url(images/logo_group-1.webp);
+       background-repeat: no-repeat;
    }
 }
 /* ------------------------max screen------------------------ */
