@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&&family=Secular+One&display=swap');
+
 nav a{
     color: black;
 }
@@ -72,7 +73,7 @@ a:hover{
 }
 
 .menu-items{
-    background: #4e4e91
+    background: #4e4e91;
 }
 
 
@@ -292,6 +293,51 @@ a:hover{
 }
 /* ----------------------------------why-business--------------------------------------- */
 
+.business-card{
+    margin: auto;
+    padding: 20px;
+    width: 290px;
+}
+.business-card img{
+    width: 141px;
+    padding-top: 40px;
+   
+}
+.business-card  h4{
+    font-size: 12px;
+    color:#84848b;
+    /* border: 1px solid purple; */
+    position: relative;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 25px;
+}
+.business-card h3{
+    padding:0 auto;
+    margin: 0;
+    color:#3e3e52;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.business-card p{
+    margin: 50px;
+}
+.business-card span{  
+    color: #4e4e91;
+    margin: 0;
+}
+
+.end-quote {
+    position: absolute;
+    bottom:-10px;
+}
+.start-quote{
+    position: absolute;
+    top:-10px;
+    left: 0;
+    transform: rotate(180deg);
+}
+
 
 
 
@@ -392,6 +438,40 @@ a:hover{
 .paly-store img{
     padding-bottom:25px;
     width: 140px;
+}
+
+.business-card{
+    margin: auto;
+    width: 620px;
+}
+.business-card img{
+    width: 141px;
+    padding-top: 40px;
+   
+}
+.business-card .card-body{
+    margin: 40px;
+}
+.business-card  h4{
+    font-size: 16px;
+    padding: 0; 
+    text-align: center;
+    line-height: 25px;
+}
+
+.business-card i{
+    font-size: 30px;
+}
+
+.end-quote {
+    position: absolute;
+    bottom:-10px;
+}
+.start-quote{
+    position: absolute;
+    top:-20px;
+    left: -20px;
+    transform: rotate(180deg);
 }
 
 }
@@ -561,6 +641,43 @@ a:hover{
     .price-list p{
        color: white;
     }
+    .business-card{
+        margin: auto;
+        width: 870px;
+    }
+    .business-card img{
+        width: 280px;
+        padding-top: 40px;
+       
+    }
+    .business-card .card-body{
+        margin: 40px;
+    }
+    .business-card  h4{
+        font-size: 16px;
+        padding: 0; 
+        text-align: left;
+        line-height: 30px;
+    }
+    .business-card h3{
+        text-align: left;
+        font-size: 20px;
+    }
+    
+    .business-card i{
+        font-size: 40px;
+    }
+    
+    .end-quote {
+        position: absolute;
+        bottom:-20px;
+    }
+    .start-quote{
+        position: absolute;
+        top:-20px;
+        left: -50px;
+        transform: rotate(180deg);
+    }
 }
 /* ------------------------max screen------------------------ */
 @media (min-width:1400px){
@@ -615,6 +732,44 @@ a:hover{
     .business-journey h3{
         font-size: 42px;
         font-weight: bolder;    
+    }
+    .business-card{
+        margin: auto;
+        width: 1090px;
+    }
+    .business-card img{
+        width: 280px; 
+        padding-top: 0;  
+    }
+    .business-card .card{
+        padding: 70px 75px;
+    }.business-card .card-body{
+        margin: 0;
+    }
+    .business-card  h4{
+        font-size: 16px;
+        padding: 0; 
+        text-align: left;
+        line-height: 30px;
+    }
+    .business-card h3{
+        text-align: left;
+        font-size: 20px;
+    }
+    
+    .business-card i{
+        font-size: 40px;
+    }
+    
+    .end-quote {
+        position: absolute;
+        bottom:-20px;
+    }
+    .start-quote{
+        position: absolute;
+        top:-20px;
+        left: -50px;
+        transform: rotate(180deg);
     }
     
 }
