@@ -292,7 +292,17 @@ a:hover{
     background-repeat: no-repeat;
 }
 /* ----------------------------------why-business--------------------------------------- */
+.why-business{
+    padding: 70px 80px;
+}
 
+.why-business h3{
+    margin: auto;
+    width: 200px;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+}
 .business-card{
     margin: auto;
     padding: 20px;
@@ -311,13 +321,16 @@ a:hover{
     padding: 0 10px;
     text-align: center;
     line-height: 25px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
 }
 .business-card h3{
     padding:0 auto;
     margin: 0;
     color:#3e3e52;
     font-size: 15px;
-    font-weight: bolder;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
 }
 .business-card p{
     margin: 50px;
@@ -445,12 +458,25 @@ a:hover{
     width: 620px;
 }
 .business-card img{
-    width: 141px;
+    width: 260px;
     padding-top: 40px;
    
 }
 .business-card .card-body{
     margin: 40px;
+}
+.why-business h3{
+    margin: auto;
+    width: 750px;
+    font-size:35px;
+    line-height: 35px;
+    padding-bottom: 30px;
+    
+}
+.why-business h3 > i{
+    font-size: 40px;
+    position: relative;
+    top: 10px;
 }
 .business-card  h4{
     font-size: 16px;
@@ -461,6 +487,9 @@ a:hover{
 
 .business-card i{
     font-size: 30px;
+}
+.business-card h3{
+   margin: auto;
 }
 
 .end-quote {
@@ -660,6 +689,7 @@ a:hover{
         line-height: 30px;
     }
     .business-card h3{
+        margin:0 ;
         text-align: left;
         font-size: 20px;
     }
