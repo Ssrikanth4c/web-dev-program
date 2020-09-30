@@ -1,0 +1,129 @@
+@use 'base';
+
+.logo{
+    font-size: 70px;
+    color: base.$color-primary;
+    border: 3px solid base.$color-primary;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    @include base.flexLayout;
+}
+
+.main-name, .sub-name{
+    font-family: base.$font-nunito;
+    color: base.$color-secondary;
+    font-size: 50px;
+    @include base.textStyles; 
+}
+.sub-name{
+    font-family: base.$font-david;
+    font-size: 30px;
+}
+.main-heading{
+    font-family: base.$font-dancingScript;
+    font-size: 100px;
+    font-weight: 300;
+    color:base.$color-primary;
+    margin-bottom: 40px;
+}
+.sub-heading{
+    font-family: base.$font-flower;
+    font-size: 40px;
+    font-weight: 300;
+    color:base.$color-secondary;
+    margin-bottom: 60px;
+}
+.main-btn{
+    width: 170px;
+    height: 40px;
+    outline: none;
+    border: 1px solid base.$color-primary;
+    background: transparent;
+    color: base.$color-primary;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: base.$font-david;
+    transition: all .4s;
+    
+    &:hover{
+        background-color: base.$color-primary;
+        color: base.$color-dark;
+    }
+}
+.card{
+    position: relative;    
+    width: 33.3333%;
+    height: 300px;
+    overflow: hidden;
+
+    &:hover .card-overlay {
+        left: 0;
+    }
+    &-img{
+        @extend  %fullSpace;
+        object-fit: cover;
+        opacity: .5;
+    }
+    &-overlay{
+        @extend %fullSpace;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        color: white;
+        background-color: rgba(base.$color-primary, .5);
+        @include base.flexLayout;
+        flex-direction: column;
+        transition: left .7s;
+        
+        &-heading{
+            @include base.textStyles(Capitalize);
+            text-align: center;
+        }
+        &-paragraph{
+            @include base.textStyles(Capitalize);
+            margin-bottom: 30px;
+            span{
+                color: #262626;
+                font-weight: bold;
+            }
+        }
+        &-btn{
+            outline: none;
+            border: 1px solid base.$color-primary;
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+.social-media{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 30px;
+    &-item{
+        list-style: none;
+        font-size: 30px;
+    }
+    &-link{
+        text-decoration: none;
+        color: base.$color-secondary;
+        transition: color .7s;
+        &:hover{
+            color: base.$color-primary;
+        }
+    }
+    
+}
+
+.footer-copyright-paragraph{
+    font-size: 18px;
+    color: base.$color-primary;
+    font-family: base.$font-flower;
+    @include base.textStyles(Capitalize);
+}
