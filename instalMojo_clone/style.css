@@ -331,6 +331,7 @@ a:hover{
     font-size: 15px;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
+    /* border:1px solid red; */
 }
 .business-card p{
     margin: 50px;
@@ -465,12 +466,13 @@ a:hover{
 .business-card .card-body{
     margin: 40px;
 }
-.why-business h3{
+.why-business > h3{
     margin: auto;
-    width: 750px;
+    width: 600px;
     font-size:35px;
     line-height: 35px;
     padding-bottom: 30px;
+    /* border:1px solid red; */
     
 }
 .why-business h3 > i{
