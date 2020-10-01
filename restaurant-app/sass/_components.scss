@@ -1,5 +1,33 @@
 @use 'base';
 
+.hamburger-menu{
+    
+    width: 40px;
+    height: 40px;
+    // background-color: red;
+    position: fixed;
+    z-index: 400;
+    top:10%;
+    right: 5%;
+
+    .menu{
+       @extend %fullSpace;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       cursor: pointer;
+       transition: transform .5s;
+       &-line{
+           width:100%;
+           height: 4px;
+           background-color: base.$color-primary;
+           transform-origin: right;
+           transition: all .5s .5s;
+       }
+      
+    }
+}
+
 .logo{
     font-size: 70px;
     color: base.$color-primary;
@@ -127,3 +155,5 @@
     font-family: base.$font-flower;
     @include base.textStyles(Capitalize);
 }
+
+
