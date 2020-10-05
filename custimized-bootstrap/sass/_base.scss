@@ -1,0 +1,50 @@
+$primary-color: #2196F3;
+$secondary-color: #9E9E9E;
+$success-color: #198754;
+$purple-color: purple;
+$warning-color: #ffc107;
+$brown-color: #795548;
+$danger-color:#dc3545;
+$body-color: #212529;
+$white-color: #fff;
+$info-color: #0dcaf0;
+$light-color: #f8f9fa;
+$dark-color: #212529;
+$lime-color:#CDDC39;
+$columns: 25;
+$btn-default-color:#212529;
+$default-font-size: 1rem;
+
+$btn-colors : (
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "success": $success-color,
+    "info": $info-color,
+    "warning": $warning-color,
+    "danger": $danger-color,
+    "dark": $dark-color,
+    "light": $light-color,
+    "purple": $purple-color,
+    "brown": $brown-color,
+    "lime": $lime-color
+);
+
+@mixin btn-att($color, $bg-color:$white-color) {
+    background-color: $color;
+    color: $bg-color;
+}
+
+@mixin  btn-outline-variant($color) {
+    border:1px solid $color;
+    color: $color;
+}
+
+@mixin btn-outline-hover($color, $text-color) {
+    background-color: $color;
+    @if($color ==$lime-color or $color==$warning-color ){
+        color:$btn-default-color
+    }@else{
+
+        color: $text-color;
+    }
+}
